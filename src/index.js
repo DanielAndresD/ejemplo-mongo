@@ -7,6 +7,11 @@ require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 9000;
 
+//Importacion de rutas
+const userRoutes = require("./routes/user");
+//enrutamiento del paquete routes
+app.use("/api", userRoutes);
+
 //mensaje de bienvenida para validar que se den respuestas en el servicio
 // routes
 app.get("/", (req, res) => {

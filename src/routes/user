@@ -1,0 +1,15 @@
+//agregar dependencias
+const express = require("express");
+const router = express.Router(); //crea el enrutador similar a "@Service" en java
+
+
+//Rutas del crud
+
+//Crear usuario
+router.post("/users", (req, res) => {
+    res.send("Ruta de crear usuario");
+  });
+
+
+//Exportar el router
+module.exports = router;
