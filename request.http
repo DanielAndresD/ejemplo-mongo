@@ -8,8 +8,11 @@ Content-Type: application/json
     "correo":"andres@gmail.com"
 }
 
-##
+###
 GET http://localhost:9000/api/users HTTP/1.1
 
 ###
-GET http://localhost:9000/api/users/6137e2bb2e329eb206b0073e HTTP/1.1
+GET http://localhost:9000/api/users/63ad30efaa8e48e32c193e40 HTTP/1.1
+
+###
+DELETE http://localhost:9000/api/users/63ab879cc7a11d890c2bae59 HTTP/1.1
