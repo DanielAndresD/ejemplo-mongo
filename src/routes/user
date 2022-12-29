@@ -7,9 +7,12 @@ const userSchema = require("../models/user"); //Importa  modelo usuario
 
 //Crear usuario
 router.post("/users", (req, res) => {
-    res.send("Ruta de crear usuario");
-  });
-
+  const user = userSchema(req.body);
+  user
+    .save()
+    .then((data) => res.json(data))
+    .catch((error) => res.json({ message: error }));
+});
 
 //Exportar el router
 module.exports = router;
