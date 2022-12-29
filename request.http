@@ -7,3 +7,9 @@ Content-Type: application/json
     "edad":23,
     "correo":"andres@gmail.com"
 }
+
+##
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/6137e2bb2e329eb206b0073e HTTP/1.1
